@@ -1,3 +1,3 @@
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "mamatha1998_bucket"
+  bucket = "${var.environment}-mamatha1998-bucket"
 }
