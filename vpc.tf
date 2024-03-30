@@ -9,3 +9,10 @@ resource "aws_subnet" "main" {
     Name = "Main"
   }
 }
+resource "aws_security_group" "SG" {
+  name   = "sg"
+  vpc_id = aws_vpc.main.id
+
+  ingress = []
+  egress  = []
+}
